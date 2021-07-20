@@ -21,11 +21,10 @@ function newItem(){
 
     
      //3(i). Adding the delete button "X": 
-       let crossOutButton = document.createElement("crossOutButton");
-         crossOutButton.appendChild(document.createTextNode("X"));
-         li.appendChild(crossOutButton);
-    
-         crossOutButton.addEventListener("click", deleteListItem);
+    let deleteButton = $('li').append('<div></div>');
+    deleteButton.append(document.createTextNode('X'));
+    deleteButton.on('click', deleteListItem);
+         
      //3(ii). Adding CLASS DELETE (DISPLAY: NONE) from the css:
        function deleteListItem(){
              li.classList.add("delete")
