@@ -3,12 +3,12 @@ function newItem(){
 
     //javascript
     //1. Adding a new item to the list of items: 
-    let inputValue = $('#input').val();
+    <span id="error" class="error-message">You must write something!</span>
+
     if (inputValue === '') {
         alert("You must write something!");
     } else {
-        let text = document.createTextNode(inputValue);
-        $('#list').append(`<li>${text}</li>`);
+        $('#list').append(`<li><span>${inputValue}</span></li>`);
     }
 
     
