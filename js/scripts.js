@@ -21,9 +21,10 @@ function newItem(){
 
     
      //3(i). Adding the delete button "X": 
-    let deleteButton = $('li').append('<div></div>');
+    let deleteButton = $('<deleteButton></deleteButton>');
     deleteButton.append(document.createTextNode('X'));
-    deleteButton.on('click', deleteListItem);
+    li.append(deleteButton);
+    deleteButton.on("click", deleteListItem);
          
      //3(ii). Adding CLASS DELETE (DISPLAY: NONE) from the css:
     function deleteListItem(){
