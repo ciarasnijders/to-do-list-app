@@ -43,7 +43,12 @@ ol li {padding: 5px;color:#000;}
 ol li:nth-child(even){background: #dfdfdf;}
 
 .error-message{
-    display: inline-block
+    display: inline-block;
+   color: red;
+}
+
+.hide {
+   display: none;
 }
 
 .strike{text-decoration: line-through;}
